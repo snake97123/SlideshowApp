@@ -13,6 +13,10 @@
 		08E7EECB29E5441B009ABFEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E7EEC929E5441B009ABFEA /* Main.storyboard */; };
 		08E7EECD29E5441D009ABFEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E7EECC29E5441D009ABFEA /* Assets.xcassets */; };
 		08E7EED029E5441D009ABFEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E7EECE29E5441D009ABFEA /* LaunchScreen.storyboard */; };
+		08E7EED829E549A9009ABFEA /* flower1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 08E7EED729E549A9009ABFEA /* flower1.jpeg */; };
+		08E7EEDA29E549D2009ABFEA /* flower2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 08E7EED929E549D2009ABFEA /* flower2.jpeg */; };
+		08E7EEDC29E549DB009ABFEA /* flower3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 08E7EEDB29E549DB009ABFEA /* flower3.jpeg */; };
+		08E7EEDE29E54D06009ABFEA /* CloseUpImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7EEDD29E54D06009ABFEA /* CloseUpImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		08E7EECC29E5441D009ABFEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08E7EECF29E5441D009ABFEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08E7EED129E5441D009ABFEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E7EED729E549A9009ABFEA /* flower1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower1.jpeg; sourceTree = "<group>"; };
+		08E7EED929E549D2009ABFEA /* flower2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower2.jpeg; sourceTree = "<group>"; };
+		08E7EEDB29E549DB009ABFEA /* flower3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower3.jpeg; sourceTree = "<group>"; };
+		08E7EEDD29E54D06009ABFEA /* CloseUpImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseUpImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,14 @@
 				08E7EEC329E5441B009ABFEA /* AppDelegate.swift */,
 				08E7EEC529E5441B009ABFEA /* SceneDelegate.swift */,
 				08E7EEC729E5441B009ABFEA /* ViewController.swift */,
+				08E7EEDD29E54D06009ABFEA /* CloseUpImageViewController.swift */,
 				08E7EEC929E5441B009ABFEA /* Main.storyboard */,
 				08E7EECC29E5441D009ABFEA /* Assets.xcassets */,
 				08E7EECE29E5441D009ABFEA /* LaunchScreen.storyboard */,
 				08E7EED129E5441D009ABFEA /* Info.plist */,
+				08E7EED729E549A9009ABFEA /* flower1.jpeg */,
+				08E7EED929E549D2009ABFEA /* flower2.jpeg */,
+				08E7EEDB29E549DB009ABFEA /* flower3.jpeg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -126,8 +138,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				08E7EED029E5441D009ABFEA /* LaunchScreen.storyboard in Resources */,
+				08E7EEDA29E549D2009ABFEA /* flower2.jpeg in Resources */,
 				08E7EECD29E5441D009ABFEA /* Assets.xcassets in Resources */,
 				08E7EECB29E5441B009ABFEA /* Main.storyboard in Resources */,
+				08E7EEDC29E549DB009ABFEA /* flower3.jpeg in Resources */,
+				08E7EED829E549A9009ABFEA /* flower1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E7EEDE29E54D06009ABFEA /* CloseUpImageViewController.swift in Sources */,
 				08E7EEC829E5441B009ABFEA /* ViewController.swift in Sources */,
 				08E7EEC429E5441B009ABFEA /* AppDelegate.swift in Sources */,
 				08E7EEC629E5441B009ABFEA /* SceneDelegate.swift in Sources */,
