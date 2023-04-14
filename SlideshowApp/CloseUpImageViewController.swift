@@ -11,8 +11,6 @@ class CloseUpImageViewController: UIViewController {
 
     @IBOutlet weak var closeUpImageView: UIImageView!
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +18,7 @@ class CloseUpImageViewController: UIViewController {
     
     }
     
-
+    
     /*
     // MARK: - Navigation
 

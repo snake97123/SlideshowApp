@@ -54,23 +54,39 @@ class ViewController: UIViewController {
         } else {
             timer?.invalidate()
             self.timer = nil
+            print("再生")
             playButton.setTitle("再生", for: .normal)
             forwardButton.isEnabled = true
             backButton.isEnabled = true
         }
     }
     @IBAction func tapImage(_ sender: Any) {
-      
+//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+//        flowerImage.addGestureRecognizer(tapGesture)
     }
+    
+//    @objc func imageTapped() {
+//        if timer != nil {
+//            timer?.invalidate()
+//            self.timer = nil
+//        }
+//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let closeUpImageViewController: CloseUpImageViewController = segue.destination as! CloseUpImageViewController
         closeUpImageViewController.loadViewIfNeeded()
         closeUpImageViewController.closeUpImageView.image = UIImage(named: images[imageIndex])
+        if timer != nil {
+            timer?.invalidate()
+            self.timer = nil
+        }
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
-        
+        if segue.identifier == "backToMain" && self.timer == nil {
+            self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateImage), userInfo: nil, repeats: true)
+            }
+
     }
 }
 

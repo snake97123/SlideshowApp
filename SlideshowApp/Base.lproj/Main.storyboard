@@ -74,7 +74,7 @@
                 <tapGestureRecognizer id="P9s-kG-leJ">
                     <connections>
                         <action selector="tapImage:" destination="BYZ-38-t0r" id="ioS-Tm-RUF"/>
-                        <segue destination="Fcx-e6-Opv" kind="show" id="sLG-fE-u6B"/>
+                        <segue destination="Fcx-e6-Opv" kind="showDetail" id="LV2-4T-I0S"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -83,20 +83,20 @@
         <!--Close Up Image View Controller-->
         <scene sceneID="ztR-63-sRr">
             <objects>
-                <viewController id="Fcx-e6-Opv" customClass="CloseUpImageViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Fcx-e6-Opv" customClass="CloseUpImageViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hpp-gf-gRv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KYd-yM-qxl">
-                                <rect key="frame" x="40" y="15" width="295" height="307"/>
+                                <rect key="frame" x="40" y="15" width="295" height="327"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYv-LY-Bv0">
-                                <rect key="frame" x="158" y="362" width="59" height="35"/>
+                                <rect key="frame" x="158" y="382" width="59" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="戻る"/>
                                 <connections>
-                                    <segue destination="bbI-Sn-ENz" kind="unwind" unwindAction="unwind:" id="Oim-Tk-BCS"/>
+                                    <segue destination="bbI-Sn-ENz" kind="unwind" identifier="backToMain" unwindAction="unwind:" id="Oim-Tk-BCS"/>
                                 </connections>
                             </button>
                         </subviews>
