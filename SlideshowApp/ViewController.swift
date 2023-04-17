@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var flowerImage: UIImageView!
     var imageIndex = 0
+    var flag = "stop"
     var timer: Timer?
     let images = ["flower1.jpeg", "flower2.jpeg", "flower3.jpeg"]
     
@@ -49,13 +50,14 @@ class ViewController: UIViewController {
         if self.timer == nil {
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateImage), userInfo: nil, repeats: true)
             playButton.setTitle("停止", for: .normal)
+            flag = "play"
             forwardButton.isEnabled = false
             backButton.isEnabled = false
         } else {
             timer?.invalidate()
             self.timer = nil
-            print("再生")
             playButton.setTitle("再生", for: .normal)
+            flag = "stop"
             forwardButton.isEnabled = true
             backButton.isEnabled = true
         }
@@ -83,9 +85,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
-        if segue.identifier == "backToMain" && self.timer == nil {
+        if segue.identifier == "backToMain" && self.timer == nil && flag == "play" {
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateImage), userInfo: nil, repeats: true)
             }
+        
 
     }
 }
